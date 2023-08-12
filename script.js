@@ -1,11 +1,19 @@
-function fibonacci(num) {
+var climbStairs = function fibonacci(num) {
 // your code here
-	if(num==0)
-		return 0;
-	else if (num==1||num==2)
-		return 1;
+	    if (n ==0) 
+			console.log("0");
+	    else if(n<=2)
+			console.log("1");
 	else
-	return fibonacci(num-1)+fibonacci(num-2);
+		{
+			let a = 1, b = 1, fib;
+    for(let i = 2; i <= n; i++) {
+        fib = a + b;
+        a = b;
+        b = fib;
+    }
+   console.log(fib);
+		}
 }
 
 module.exports = fibonacci;
