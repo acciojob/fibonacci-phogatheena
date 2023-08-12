@@ -1,19 +1,8 @@
-var climbStairs = function fibonacci(num) {
-// your code here
-	    if (n ==0) 
-			console.log("0");
-	    else if(n<=2)
-			console.log("1");
-	else
-		{
-			let a = 1, b = 1, fib;
-    for(let i = 2; i <= n; i++) {
-        fib = a + b;
-        a = b;
-        b = fib;
-    }
-   console.log(fib);
-		}
-}
-
-module.exports = fibonacci;
+var n1 = 0,  n2 = 1, next_num, i;  
+for ( i = 1; i <= num; i++)  
+{  document.write (" <br> " +  n1); // print the n1  
+    next_num = n1 + n2; // sum of n1 and n2 into the next_num  
+      
+    n1 = n2; // assign the n2 value into n2  
+    n2 = next_num; // assign the next_num into n2  
+}  
