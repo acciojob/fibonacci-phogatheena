@@ -1,18 +1,10 @@
 	function fibonacci(num) {
-    if (num === 1) {
+        if (num === 1) {
         return 0;
     } else if (num === 2) {
         return 1;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
     }
 
-    let fibPrevPrev = 0;
-    let fibPrev = 1;
-
-    for (let i = 3; i <= num; i++) {
-        let fibCurr = fibPrevPrev + fibPrev;
-        fibPrevPrev = fibPrev;
-        fibPrev = fibCurr;
-    }
-
-    return fibPrev;
-    }
+	}
