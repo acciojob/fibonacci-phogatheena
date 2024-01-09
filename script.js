@@ -15,7 +15,7 @@ function fibonacci(num) {
     current = next;
   }
 
-  return current;
+  return next;
 }
 
 module.exports = fibonacci;
