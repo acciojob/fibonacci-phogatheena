@@ -12,7 +12,7 @@
 				num1=num2;
 				num2=result;
 			}
-		return result;
+		return num2;
     }
 
 	}
