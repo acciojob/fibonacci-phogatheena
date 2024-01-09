@@ -1,7 +1,8 @@
 	function fibonacci(num) {
         if (num === 1) {
         return 0;
-    } else if (num === 2) {
+    } 
+		else if (num === 2) {
         return 1;
     } 
 		var num1=0;
@@ -12,8 +13,6 @@
 				num1=num2;
 				num2=result;
 			}
-		return num2;
-    }
-
+		return result;
 	}
 module.exports = fibonacci;
