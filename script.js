@@ -1,5 +1,5 @@
 	function fibonacci(num) {
-        if (num === 0||num===1) {
+        if (num===1) {
         return 0;
     } 
 		else if (num === 2) {
@@ -7,7 +7,7 @@
     } 
 		var num1=0;
 		var num2=1;
-		for(let i =3;i<=n;i++)
+		for(let i =3;i<=num;i++)
 			{
 				let result=num1+num2;
 				num1=num2;
