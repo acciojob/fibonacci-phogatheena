@@ -1,5 +1,5 @@
 	function fibonacci(num) {
-        if (num===1) {
+        if (num===1||num==0) {
         return 0;
     } 
 		else if (num === 2) {
